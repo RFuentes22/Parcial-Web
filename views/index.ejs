@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-   <header>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline" rel="stylesheet">
+  <script src="../public/javascripts/main.js"></script>
+</head>
+
+<body>
+  <header>
     <nav class="barra-inicial">Administrador de tareas</nav>
-   </header>
-   
-   <div class="inputs">
-    <input type="text" name="Campo1" id="" placeholder="Campo1">
-    <input type="text" name="Campo2" id="" placeholder="Campo2">
-    <input type="text" name="Campo3" id="" placeholder="Campo3">
-   </div>
+  </header>
 
-   <table>
-     <thead>
-       <td>#</td>
-       <td>Materia</td>
-       <td>uv</td>
-       <td>Descipcion</td>
-     </thead>
-   </table>
+  <div class="inputs">
+    <form action="/api/posts" name="form"> 
+      <input type="text" name="Campo1" id="input" placeholder="Campo1">
+      <input type="text" name="Campo2" id="input" placeholder="Campo2">
+      <input type="text" name="Campo3" id="input" placeholder="Campo3">
+      <input type="submit" id="input" class="submit" value="Guardar">
+    </form>
 
-  </body>
+  </div>
+
+  <table>
+    <thead class="thead">
+      <td>#</td>
+      <td>Materia</td>
+      <td>uv</td>
+      <td>Descipcion</td>
+      <td>Opciones</td>
+    </thead>
+
+    <tbody>
+
+    </tbody>
+  </table>
+
+</body>
+
 </html>
