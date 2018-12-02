@@ -7,19 +7,19 @@
   </title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline" rel="stylesheet">
-  <script src="../public/javascripts/main.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+ 
 </head>
 
 <body>
   <header>
-    <nav class="barra-inicial">Administrador de tareas</nav>
+    <nav class="barra-inicial">Redes sociales</nav>
   </header>
 
   <div class="inputs">
-    <form action="/api/posts" name="form"> 
-      <input type="text" name="Campo1" id="input" placeholder="Campo1">
-      <input type="text" name="Campo2" id="input" placeholder="Campo2">
-      <input type="text" name="Campo3" id="input" placeholder="Campo3">
+    <form action="/api/posts" method="POST" name="form"> 
+      <input type="text" name="Campo1" id="input" placeholder="Nombre ">
+      <input type="text" name="Campo2" id="input" placeholder="Creador">
       <input type="submit" id="input" class="submit" value="Guardar">
     </form>
 
@@ -28,17 +28,18 @@
   <table>
     <thead class="thead">
       <td>#</td>
-      <td>Materia</td>
-      <td>uv</td>
-      <td>Descipcion</td>
+      <td>Nombre</td>
+      <td>Creador</td>
+      <td>Conexiones</td>
       <td>Opciones</td>
     </thead>
 
-    <tbody>
+    <tbody class="tbody">
 
     </tbody>
   </table>
-
+ 
+  <source src="../public/javascripts/main.js">
 </body>
 
 </html>
